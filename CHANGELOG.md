@@ -4,6 +4,7 @@
 - Fixes image overlapping details on product page and Quick View on small viewports [#1067](https://github.com/bigcommerce/cornerstone/pull/1067)
 - Allow 'none' to be a default selection on product option pick lists [#1068](https://github.com/bigcommerce/cornerstone/pull/1068)
 - Fixes a bug where product options and add to cart do not work when opened in Quick View modals [#1070](https://github.com/bigcommerce/cornerstone/pull/1070)
+- Partially bandages a problem with in-stock product list options showing up as crossed out (out of stock) when the product is tracked by SKU. It certainly does not fix the problem, as it simply reverses the behavior (shows them all as in stock instead of out of stock-- however, out of stock product list options will not be able to be purchased as data.instock/data.purchasable will disable the checkout button). [#1083]
 
 ## 1.9.2 (2017-08-16)
 - Hide Info in footer if no address is provided in Store Profile. Hide Brands in footer if Merchant has no brands [#1053](https://github.com/bigcommerce/cornerstone/pull/1053)

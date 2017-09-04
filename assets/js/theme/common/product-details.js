@@ -409,8 +409,11 @@ export default class ProductDetails {
 
             if (inStockIds.indexOf(attrId) !== -1) {
                 this.enableAttribute($attribute, behavior, outOfStockMessage);
-            } else {
+            } else if ($attribute.prop("className") != "form-label") {
                 this.disableAttribute($attribute, behavior, outOfStockMessage);
+            }
+            else {
+                this.enableAttribute($attribute, behavior, outOfStockMessage);
             }
         });
     }
